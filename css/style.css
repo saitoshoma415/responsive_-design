@@ -4,6 +4,7 @@
   --primary: #0d6efd;
   --dark: #21252f;
   --body: #888;
+  --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -17,7 +18,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.display-4 {
   color: var(--dark);
   font-weight: 700;
 }
@@ -25,6 +27,11 @@ h6 {
 a {
   color: var(--dark);
   text-decoration: none;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .navbar .nav-link {
@@ -59,4 +66,8 @@ a {
   left: 0;
   background-color: rgba(66, 66, 68, 0.7);
   z-index: -1;
+}
+
+.card-effect {
+  box-shadow: var(--box-shadow);
 }
